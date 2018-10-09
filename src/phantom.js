@@ -3,7 +3,7 @@
  * @Github: <https://github.com/qiuziz>
  * @Date: 2018-09-21 16:08:57
  * @Last Modified by: qiuz
- * @Last Modified time: 2018-10-08 10:48:15
+ * @Last Modified time: 2018-10-09 17:52:21
  */
 var USER_AGENTS = require('./user-agents')
     , LEN = USER_AGENTS.length
@@ -26,7 +26,7 @@ webserver.create().listen(port, { keepAlive: true }, function(request, response)
       var webPage = require('webpage');
       var page = webPage.create();
       page.settings.userAgent = USER_AGENTS[random(0, LEN)];
-      page.settings.loadImages = false;
+      // page.settings.loadImages = false;
       page.settings.resourceTimeout = 10000;//timeout is 10s
       // page error catch
       page.onError = function(msg, trace) {
