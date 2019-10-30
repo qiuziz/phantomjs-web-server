@@ -45,7 +45,7 @@ webserver.create().listen(port, { keepAlive: true }, function(request, response)
           });
         }
         console.error(msgStack.join('\n'));
-        phantom.exit(1);
+        // phantom.exit(1);
       };
       // open url, get html
       page.open(url, function (status) {
