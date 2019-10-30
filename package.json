@@ -1,0 +1,8 @@
+{
+  "name": "phantomjs-web-server",
+  "version": "0.0.0",
+  "scripts": {
+    "deploy": "sh deploy.sh"
+  },
+  "private": true
+}
