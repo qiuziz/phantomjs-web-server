@@ -31,3 +31,6 @@ then
 			throw err;
 		})
 ```
+
+#### Use Docker
+docker-compose up -d
