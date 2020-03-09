@@ -4,5 +4,13 @@
   "scripts": {
     "deploy": "sh deploy.sh"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^2.1.1",
+    "request-promise": "^4.2.5"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
